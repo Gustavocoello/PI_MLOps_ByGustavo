@@ -2,4 +2,4 @@ fastapi-deployment/*
 !fastapi-deployment/main.py
 Data/
 ETL/*
-!ETL/ETL_1.ipynb
+!ETL/ETL_reviews.ipynb
