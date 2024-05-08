@@ -1,6 +1,8 @@
 services:
   - name: fastapi-app
-    buildCommand: pip install -r fastapi-deployment/requirements.txt
+    buildCommand: |
+      source fastapi-deployment/proyecth/bin/activate
+      pip install -r fastapi-deployment/requirements.txt
     startCommand: uvicorn fastapi-deployment.main:app --host 0.0.0.0 --port $PORT
     env:
       - key: PYTHONUNBUFFERED
